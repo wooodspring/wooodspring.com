@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif; /* Simple, readable font */
+    background-color: #f0f0f0; /* Light gray background */
+    color: #333; /* Dark text for contrast */
+    text-align: center; /* Center the content */
+    padding: 20px; 
+}
+
+#teaser-container {
+    background-color: #b80e0e; /* Bold red to draw attention */
+    color: white;
+    padding: 20px;
+    margin: 20px auto; /* Center the container */
+    width: 50%;  /* Limit width for readability */
+    border-radius: 8px; /* Soften the corners */ 
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+#teaser-container p {
+    font-size: 1.2em; /* Slightly larger text */
+    margin-bottom: 15px; 
+}
