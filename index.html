@@ -3,14 +3,30 @@
 <head>
   <title>Woodspring Hotel</title>
   <style> 
-   /* Your CSS from earlier */
+   #teaser-container p {
+     display: none; /* Hide all teasers by default */
+   }
   </style>
 </head>
 <body>
   <div id="teaser-container">
-    </div>
+    <p id="teaser-1">Thinking of Staying at Woodspring Hotel?  Read This First.</p>
+    <p id="teaser-2">Overpriced, Understaffed, and Overflowing Trash? </p>
+    <p id="teaser-3">Is Woodspring Hotel a Legitimate Business?</p>
+  </div>
+
   <script>
-    // Your JavaScript from earlier 
+   let teasers = document.querySelectorAll('#teaser-container p'); 
+   let currentTeaser = 0; 
+
+   function rotateTeaser() {
+     teasers[currentTeaser].style.display = 'none'; // Hide current
+     currentTeaser = (currentTeaser + 1) % teasers.length; // Increment (and loop)
+     teasers[currentTeaser].style.display = 'block'; // Show the next one
+   }
+
+   // Rotate teasers every 5 seconds 
+   setInterval(rotateTeaser, 5000); 
   </script>
 </body>
 </html>
